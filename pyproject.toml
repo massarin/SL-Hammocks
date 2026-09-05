@@ -19,7 +19,8 @@ dependencies = [
     "astropy",
     "colossus",
     "joblib",
-    "glafic",
+    # not on PyPI: C extension built from source by its Makefile, needs gsl and cfitsio
+    "glafic @ git+https://github.com/massarin/glafic2.git",
 ]
 
 [project.optional-dependencies]
