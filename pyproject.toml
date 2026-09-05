@@ -1,3 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sl-hammocks"
+version = "1.0.0"
+description = "Mock catalogs of gravitationally lensed quasars and supernovae from a halo-model approach"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Katsuya T. Abe", email = "ktabecosmology@gmail.com" },
+    { name = "Masamune Oguri" },
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "astropy",
+    "colossus",
+    "joblib",
+    "glafic",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/LSSTDESC/SL-Hammocks"
+
+[tool.setuptools]
+py-modules = [
+    "gen_mock_halo",
+    "gen_pop_halo",
+    "global_value",
+    "lens_gals",
+    "lens_halo",
+    "lens_subhalo",
+    "solve_lenseq",
+    "solve_lenseq_glafic",
+    "source_qso",
+    "source_sn",
+    "source_tab",
+]
+
 [tool.ruff]
 line-length = 140
 indent-width = 4
