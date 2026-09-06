@@ -20,7 +20,7 @@ dependencies = [
     "colossus",
     "joblib",
     # not on PyPI: C extension built from source by its Makefile, needs gsl and cfitsio
-    "glafic @ git+https://github.com/massarin/glafic2.git",
+    "glafic @ git+https://github.com/massarin/glafic2.git@559c68b5d3c9db62172319ee79e662300842a2fa",
 ]
 
 [project.optional-dependencies]
